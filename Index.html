@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+
+<a-camera>
+    
+
+<a-cursor color="white"></a-cursor>
+
+</a-camera>
+
+<a-sky color="black"></a-sky>
+
+<a-plane position="0 0 0" rotation="-90 0 0" width="1000" height="1000" color="aqua"></a-plane>
+
+
+<a-box
+position="0 1 -5" depth="2" height="2" width="2" color="red"
+animation="
+property: position; 
+from: 0 10 -5; 
+to: 0 1 -5; 
+dur: 3000; 
+easing: easeOutCubic;
+dir: alternate; 
+loop: true;"
+animation__2="property: scale;
+from: 1 1 1;
+to: 0 0 0;
+dur: 1000;
+easing: easeInQuad;
+loop: false;
+startEvents: click;"
+></a-box>
+
+<a-icosahedron position="3 1 -5" color="#FF926B" radius="1"
+animation="
+property: position;
+from: 3 1 -5;
+to: 391 38 33;
+dur: 300;
+dir: alternate;
+loop: true;"
+animation__2="property: scale;
+from: 1 1 1;
+to: 0 0 0;
+dur: 1000;
+easing: easeInQuad;
+loop: false;
+startEvents: click;"></a-icosahedron>
+
+<a-sphere position="-3 1.5 -5" radius="0.2" color="yellow"
+animation="
+property: position;
+from: -3 1.5 -5;
+to: 0 1.5 -5
+dur: 2000;
+dir: alternate;
+loop: true;"
+
+animation__2="property: position;
+from: -3 1.5 -5;
+to: 0 1.5 5;
+dir: alternate;
+dur: 2000;
+delay: 2000;
+loop: true;"
+
+animation__3="property: scale;
+from: 1 1 1;
+to: 0 0 0;
+dur: 1000;
+easing: easeInQuad;
+loop: false;
+startEvents: click;"></a-sphere>
+
+
+
+</a-scene>
+</body>
+</html>
