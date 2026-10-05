@@ -13,13 +13,18 @@
 
 </a-camera>
 
+<a-assets>
+      <audio id="soundEffect1" src="sound1.mp3" preload="auto"></audio>
+ </a-assets>
+
+            
 <a-sky color="black"></a-sky>
 
 <a-plane position="0 0 0" rotation="-90 0 0" width="1000" height="1000" color="aqua"></a-plane>
 
 
 <a-box
-position="0 1 -5" depth="2" height="2" width="2" color="red"
+position="0 1 -5" depth="2" height="2" width="2" color="red" sound="src: #soundEffect1; on: click"
 animation="
 property: position; 
 from: 0 10 -5; 
